@@ -68,6 +68,7 @@ body {
   height: 100px;
   background-image: url('./assets/wave.svg');
   background-repeat: repeat-x;
+  background-position: bottom;
 }
 .mainContainer--content {
   padding: 100px 1rem;
