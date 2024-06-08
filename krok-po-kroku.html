@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instrukcja krok po kroku</title>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./krok-po-kroku.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="content">
+        <nav class="header--navigation">
+          <ul>
+            <li><a href="./index.html">Strona główna</a></li>
+            <li><a href="./krok-po-kroku.html">Krok po kroku</a></li>
+            <li>
+              <a href="./informacje.html">Czym jest Kahoot</a>
+            </li>
+            <li><a href="./tutorial.html">Tutorial</a></li>
+            <li><a href="./propozycje.html">Scenariusze</a></li>
+          </ul>
+        </nav>
+        <button
+          class="header--openMenu"
+          aria-roledescription="Open/Close navigation for mobiles"
+        >
+          <div class="hamburgerIcon">
+            <div class="hamburgerIcon--top"></div>
+            <div class="hamburgerIcon--middle"></div>
+            <div class="hamburgerIcon--bottom"></div>
+          </div>
+        </button>
+      </div>
+    </header>
+    <div class="header--navMask"></div>
+    <div class="header--bottom">
+      <h1>Kahoot - quizy i interaktywne zabawy</h1>
+    </div>
+
+    <main class="mainContainer">
+      <div class="mainContainer--content">
+        <section class="stepByStep--section">
+          <div class="stepByStep--section--text">
+            <h2>Jak uzyskać dostęp do kreatora kahoot</h2>
+            <ol>
+              <li>Zaloguj się na swoje konto.</li>
+              <li>
+                Kliknij przycisk <strong>Utwórz</strong> po prawej stronie
+                górnego paska nawigacyjnego.
+              </li>
+              <li>
+                Wybierz opcję <strong>Kahoot</strong> z rozwijanego menu, aby
+                utworzyć kahoot.<br />
+                <img
+                  src="./assets/step-by-step-1.png"
+                  alt="zrób kahoot"
+                  width="302"
+                  height="170"
+                  id="step1--image"
+                />
+              </li>
+              <li>
+                Po rozpoczęciu tworzenia kahoota możesz nawigować między
+                pytaniami i dodawać nowe za pomocą lewego paska bocznego. Możesz
+                tworzyć nowe pytania od podstaw, kopiować je z innych kahootów,
+                importować slajdy z prezentacji lub importować pytania quizowe z
+                arkusza kalkulacyjnego.
+              </li>
+            </ol>
+          </div>
+          <div class="stepByStep--section--text">
+            <h2>Dodawanie pytań</h2>
+            <ol>
+              <li>
+                Podczas tworzenia kahoota kliknij przycisk
+                <strong>Dodaj pytanie</strong> w panelu po lewej stronie pod
+                pytaniami, które już dodałeś.
+              </li>
+              <li>
+                Wybierz typ pytania.<br /><img
+                  src="./assets/step-by-step-2.gif"
+                  id="step2--image"
+                />
+              </li>
+              <li>
+                Wpisz pytanie. Pytania z sekcji
+                <strong>Test wiedzy</strong> wymagają podania odpowiedzi i
+                zaznaczenia poprawnej odpowiedzi (jeśli dotyczy wybranego typu
+                pytania).
+              </li>
+            </ol>
+            <ul>
+              <li>
+                Jeśli zapomnisz o jakimś elemencie pytania lub przekroczysz
+                limit znaków, po opuszczeniu pytania w panelu po lewej stronie
+                pojawi się wykrzyknik.<br /><img
+                  src="./assets/step-by-step-3.png"
+                  width="167"
+                  height="118"
+                  id="step3--image"
+                />
+              </li>
+              <li>
+                Funkcje oznaczone gwiazdką nie są objęte Twoim aktualnym planem.
+                Jeśli z nich korzystasz, zostaniesz poproszony o uaktualnienie
+                do udostępniania, hostowania i przypisywania gry.
+                <br /><img
+                  src="./assets/step-by-step-4.png"
+                  width="355"
+                  height="72"
+                  id="step4--image"
+                />
+              </li>
+              <li>Możesz dodać do <strong>100 pytań</strong> na kahoot.</li>
+            </ul>
+          </div>
+
+          <div class="stepByStep--section--text">
+            <h2>Jak przenosić, powielać lub usuwać pytania</h2>
+            <ol>
+              <li>Kliknij pytanie w panelu po lewej stronie.</li>
+              <li>
+                Przeciągnij pytanie pionowo w panelu, aby umieścić je nad lub
+                pod innym pytaniem.
+              </li>
+              <li>
+                Kliknij ikonę powielania
+                <img
+                  src="./assets/copy-icon.png"
+                  alt="make a kahoot"
+                  width="19"
+                  height="16"
+                />, aby powielić pytanie.
+              </li>
+              <li>
+                Kliknij ikonę kosza na śmieci
+                <img
+                  src="./assets/delete-icon.png"
+                  alt="make a kahoot"
+                  width="16"
+                  height="16"
+                />, aby usunąć pytanie.
+                <br />
+                <img
+                  class="img-shadow"
+                  src="/assets/step-by-step-5.gif"
+                  alt="zrób kahoot"
+                  id="step5--image"
+                />
+              </li>
+            </ol>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="textBlock">
+        <p>
+          <span>Strona powstała na zajęcia Tik</span>
+          <span>WNOW PPiW</span>
+          <span>3 rok niestacjonarne</span>
+          <span>Zuzanna Pilatowicz</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

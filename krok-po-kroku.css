@@ -1,0 +1,56 @@
+.stepByStep--section {
+  padding: 0 2rem;
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.stepByStep--section img {
+  max-width: 100%;
+}
+
+#step1--image {
+  aspect-ratio: 471/265;
+}
+#step2--image {
+  aspect-ratio: 600/327;
+}
+#step3--image {
+  aspect-ratio: 374/264;
+}
+#step4--image {
+  aspect-ratio: 826/168;
+}
+#step5--image {
+  aspect-ratio: 600/998;
+  width: 300px;
+}
+.stepByStep--section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.stepByStep--section--text {
+}
+.stepByStep--section ol,
+.stepByStep--section ul {
+  margin-top: 2rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  color: var(--black);
+}
+.stepByStep--section li {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 820px) {
+  .stepByStep--section .stepByStep--elementContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .stepByStep--section ol,
+  .stepByStep--section ul {
+    font-size: 1.25rem;
+  }
+}

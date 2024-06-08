@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Luckiest+Guy&display=swap');
+
+:root {
+  --section-padding: 24px;
+  --content--width: 1440px;
+
+  --transition-1: 0.1s cubic-bezier(0.47, 0, 0.745, 0.715);
+  --transition-2: 0.05s cubic-bezier(0.47, 0, 0.745, 0.715);
+  --transition-3: 0.15s cubic-bezier(0.47, 0, 0.745, 0.715);
+  --transition-4: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  --black: #1b1d23;
+  --grey: #60636c;
+  --yellow: #f3b61f;
+  --blue: #2196f3;
+  --dark-blue: #1d3557;
+  --primary: #46178f;
+  --primary-light: #864cbf;
+  --primary-very-light: #c2a4df;
+  --white: #fff;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header--bottom {
+  display: grid;
+  place-items: center;
+  padding: 2rem 0.5rem;
+}
+.header--bottom h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  color: var(--yellow);
+  font-size: 2rem;
+  text-shadow: 3px 3px 3px var(--black);
+  letter-spacing: 1px;
+  text-align: center;
+}
+.mainContainer {
+  position: relative;
+  min-height: calc(100vh - 192px - 64px);
+}
+
+.mainContainer::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url('./assets/wave.svg');
+  background-repeat: repeat-x;
+}
+.mainContainer--content {
+  padding: 100px 1rem;
+  padding-top: 1rem;
+  margin: auto;
+  width: auto;
+  max-width: var(--content--width);
+}
+.footer {
+  width: 100%;
+  background-color: var(--primary);
+}
+.footer .textBlock {
+  margin: auto;
+  width: auto;
+  max-width: var(--content--width);
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+.footer .textBlock p {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  line-height: 2rem;
+}
+@media screen and (min-width: 900px) {
+  .mainContainer {
+    min-height: calc(100vh - 192px - 80px);
+  }
+  .header--top {
+    justify-content: center;
+  }
+  .hamburger {
+    display: none;
+  }
+  .mobile-navigation-container {
+    display: none;
+  }
+  .navigation {
+    display: block;
+  }
+  .navigation ul {
+    gap: 2rem;
+  }
+  .header--bottom h1 {
+    font-size: 2.5rem;
+  }
+  .header--bottom {
+    padding: 6rem 2rem;
+  }
+}
